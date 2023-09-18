@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>git Playground</title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
 </head>
-
 <body>
-    <h1>Hello World</h1>
-    <p> Heyy Po </p>
-    <p> Heyy Po </p>
-    <p> Heyy Po dsdsd </p>
-    <p> This is actually a new changed </p>
+    <div class="app">
+        <h1>Todo List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button id="addTaskBtn">Add</button>
+        </div>
+        <ul id="taskList" class="task-list">
+            <!-- Tasks will be added here -->
+        </ul>
+        <div class="footer">
+            <button id="clearCompletedBtn">Clear Completed</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
-
 </html>
