@@ -8,10 +8,17 @@
 </head>
 <body>
     <div class="app">
-        <h1>Todo List</h1>
+        <div class="header">
+            <h1>Todo List</h1>
+            <button id="sortBtn">Sort A-Z</button>
+        </div>
         <div class="input-container">
             <input type="text" id="taskInput" placeholder="Add a new task...">
             <button id="addTaskBtn">Add</button>
+        </div>
+        <div class="task-stats">
+            <p id="taskCount">0 tasks remaining</p>
+            <p id="completedCount">0 tasks completed</p>
         </div>
         <ul id="taskList" class="task-list">
             <!-- Tasks will be added here -->
